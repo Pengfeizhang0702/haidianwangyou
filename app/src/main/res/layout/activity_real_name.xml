@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="jni.text.zhzl.com.netizensservices.mine.RealNameActivity">
+
+
+    <jni.text.zhzl.com.netizensservices.view.Topbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="实名认证" />
+
+
+    <jni.text.zhzl.com.netizensservices.view.CustomClearEdittext
+        android:id="@+id/real_name_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape_login_bg"
+        android:hint="姓名"
+        android:padding="@dimen/dp_10"
+        android:textSize="@dimen/size_16" />
+
+
+    <jni.text.zhzl.com.netizensservices.view.CustomClearEdittext
+        android:id="@+id/real_name_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape_login_bg"
+        android:hint="身份证号码"
+        android:inputType="textPassword"
+        android:padding="@dimen/dp_10"
+        android:textSize="@dimen/size_16" />
+
+
+    <TextView
+        android:id="@+id/real_name_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/shape_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_13"
+        android:paddingTop="@dimen/dp_13"
+        android:text="提交"
+        android:textColor="@color/color_ffffff" />
+
+</LinearLayout>

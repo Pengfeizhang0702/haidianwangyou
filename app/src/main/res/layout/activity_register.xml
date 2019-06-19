@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.RegisterActivity">
+
+    <jni.text.zhzl.com.netizensservices.view.Topbar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="注册" />
+
+
+    <LinearLayout
+        android:id="@+id/register_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:layout_marginTop="@dimen/dp_10">
+
+
+        <jni.text.zhzl.com.netizensservices.view.CustomClearEdittext
+            android:id="@+id/register_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_login_bg"
+            android:hint="输入手机号"
+            android:padding="@dimen/dp_10"
+            android:textSize="@dimen/size_16" />
+
+        <TextView
+            android:id="@+id/register_send_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/shape_bg"
+            android:padding="@dimen/dp_10"
+            android:text="获取验证码"
+            android:textColor="@color/color_ffffff" />
+
+
+    </LinearLayout>
+
+
+    <jni.text.zhzl.com.netizensservices.view.CustomClearEdittext
+        android:id="@+id/register_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_ll"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape_login_bg"
+        android:hint="输入验证码"
+        android:padding="@dimen/dp_10"
+        android:textSize="@dimen/size_16" />
+
+
+    <TextView
+        android:id="@+id/register_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_code"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/shape_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="注册"
+        android:textColor="@color/color_ffffff" />
+
+
+</RelativeLayout>

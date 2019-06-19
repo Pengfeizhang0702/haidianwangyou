@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="Topbar">
+        <attr name="title" format="string" />
+        <attr name="left_text" format="string" />
+        <attr name="right_text" format="string" />
+        <attr name="left_vis" format="boolean" />
+        <attr name="bg_color" format="color" />
+        <attr name="right_icon" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ETWithDelete">
+        <attr name="delSrc" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DottedLine">
+        <attr name="dotColor" format="color" />
+    </declare-styleable>
+
+
+</resources>

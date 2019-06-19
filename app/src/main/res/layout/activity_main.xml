@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_54"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_home_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffffff"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_tab_item_home"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_6"
+            android:text="首页"
+            android:textColor="@drawable/main_text_color"
+            android:textSize="@dimen/size_12" />
+
+        <RadioButton
+            android:id="@+id/main_venue_tab"
+            android:background="@color/color_ffffff"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_tab_item_home"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_6"
+            android:text="共享"
+            android:textColor="@drawable/main_text_color"
+            android:textSize="@dimen/size_12" />
+
+
+        <RadioButton
+            android:id="@+id/main_dynamic_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_ffffff"
+
+            android:button="@null"
+            android:drawableTop="@drawable/main_tab_item_home"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_6"
+            android:text="共治"
+            android:textColor="@drawable/main_text_color"
+            android:textSize="@dimen/size_12" />
+
+
+        <RadioButton
+            android:id="@+id/main_mine_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffffff"
+
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_tab_item_home"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_6"
+            android:text="个人中心"
+            android:textColor="@drawable/main_text_color"
+            android:textSize="@dimen/size_12" />
+
+
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_tab" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignBottom="@id/main_container"
+        android:background="@color/color_eeeeee" />
+
+
+</RelativeLayout>

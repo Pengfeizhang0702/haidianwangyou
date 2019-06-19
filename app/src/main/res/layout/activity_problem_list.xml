@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f7f7"
+    tools:context=".home.ProblemListActivity">
+
+    <jni.text.zhzl.com.netizensservices.view.Topbar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/problem_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:background="@color/color_ffffff"
+        android:drawableRight="@mipmap/voice_type"
+        android:padding="@dimen/dp_10"
+        android:text="当前位置:海淀区"
+        android:textSize="@dimen/size_16" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/problem_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contnet_ll"
+        android:layout_below="@+id/problem_address" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_above="@+id/contnet_ll"
+        android:layout_below="@+id/problem_rv"
+        android:background="@color/color_474455" />
+
+    <LinearLayout
+        android:id="@+id/contnet_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#f2f7f7"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingTop="@dimen/dp_2">
+
+            <ImageView
+                android:id="@+id/problem_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dp_5"
+                android:src="@mipmap/voice_icon" />
+
+            <EditText
+                android:id="@+id/problem_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_toLeftOf="@+id/problem_expression"
+                android:layout_toRightOf="@+id/problem_voice"
+                android:background="@mipmap/ed_bg"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp_7"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_7"
+                android:textColor="@color/color_474455"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_16" />
+
+
+            <TextView
+                android:id="@+id/problem_voice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_toLeftOf="@+id/problem_expression"
+                android:layout_toRightOf="@+id/problem_voice"
+                android:background="@mipmap/ed_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_7"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_7"
+                android:text="按住 说话"
+                android:textColor="@color/color_474455"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/size_16"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/problem_expression"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_toLeftOf="@+id/add_more"
+                android:src="@mipmap/expression_icon" />
+
+            <ImageView
+                android:id="@+id/add_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:src="@mipmap/add_more_icon" />
+
+            <TextView
+                android:id="@+id/problem_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/shape_bg"
+                android:padding="@dimen/dp_7"
+                android:text="发送"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/size_12"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/more_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/problme_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_25"
+                android:scaleType="fitXY"
+                android:src="@mipmap/photo" />
+
+            <ImageView
+                android:id="@+id/problme_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_25"
+                android:scaleType="fitXY"
+                android:src="@mipmap/camera" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

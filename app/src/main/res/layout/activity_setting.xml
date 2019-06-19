@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eeeeee"
+    android:orientation="vertical"
+    tools:context="jni.text.zhzl.com.netizensservices.mine.setting.SettingActivity">
+
+
+    <jni.text.zhzl.com.netizensservices.view.Topbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="设置" />
+
+
+    <TextView
+        android:id="@+id/setting_edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:padding="@dimen/dp_10"
+        android:text="修改密码"
+        android:textColor="@color/color_434343"
+        android:textSize="@dimen/size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_eeeeee" />
+
+    <TextView
+        android:id="@+id/setting_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:padding="@dimen/dp_10"
+        android:text="意见反馈"
+        android:textColor="@color/color_434343"
+        android:textSize="@dimen/size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_eeeeee" />
+
+    <TextView
+        android:id="@+id/setting_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:padding="@dimen/dp_10"
+        android:text="清除缓存"
+        android:textColor="@color/color_434343"
+        android:textSize="@dimen/size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_eeeeee" />
+
+    <TextView
+        android:id="@+id/setting_abouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:padding="@dimen/dp_10"
+        android:text="关于我们"
+        android:textColor="@color/color_434343"
+        android:textSize="@dimen/size_16" />
+</LinearLayout>
